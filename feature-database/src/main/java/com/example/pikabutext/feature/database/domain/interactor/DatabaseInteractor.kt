@@ -26,7 +26,7 @@ class DatabaseInteractorImpl @Inject constructor(
     private val favoriteDtoMapper: FavoriteDtoMapper,
     private val favoriteMapper: FavoriteMapper
 ) : DatabaseInteractor {
-    override val favorites =
+    override val favorites: LiveData<List<FavoriteEntity>> =
         databaseRepository.favorites.map { list -> list.map { favoriteDtoMapper.map(it) } }
 
     override suspend fun getFavorites(): List<FavoriteEntity> =
