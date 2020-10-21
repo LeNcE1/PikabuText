@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PikabuText</string>
+    <string name="news">News</string>
+    <string name="favorites">Favorites</string>
+    <string name="list_is_empty">List is empty</string>
+    <string name="connection_error">Connection error</string>
+</resources>
